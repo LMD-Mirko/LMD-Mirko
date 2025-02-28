@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../img/chipley.png') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.caja-contacto {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.informacion, .formulario {
+    flex: 1;
+    padding: 40px;
+    min-width: 300px;
+}
+
+.informacion {
+    background: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.icono {
+    color: #ff5500;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.campo {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.txt-area {
+    height: 100px;
+    resize: none;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-enviar:hover {
+    background-color: #242222;
+}
+
+/*Responsive*/
+
+@media (max-width: 900px) {
+    .caja-contacto {
+        max-width: 600px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .caja-contacto {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .informacion, .formulario {
+        min-width: unset;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 408px) {
+    .informacion, .formulario {
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .item {
+        font-size: 14px;
+    }
+
+    .campo {
+        padding: 10px;
+    }
+
+    .btn-enviar {
+        padding: 10px;
+    }
+}

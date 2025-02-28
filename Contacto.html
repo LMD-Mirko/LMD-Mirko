@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="css/styleConta.css">
+</head>
+<body>
+    <div class="caja-contacto">
+        <div class="informacion">
+            <div class="titulo">Contáctanos</div>
+            <div class="item"><span class="icono">📞</span> 555-443-4341</div>
+            <div class="item"><span class="icono">📍</span> 121 calle ninguna 001</div>
+            <div class="item"><span class="icono">🕒</span> Lun - Vie: 10 am - 8 pm, Sáb, Dom: Cerrado</div>
+        </div>
+
+        <div class="formulario">
+            <div class="titulo">Envíanos un mensaje</div>
+            <form onsubmit="mostrarAlerta(event)">
+                <input type="text" class="campo" placeholder="Tu Nombre" required>
+                <input type="email" class="campo" placeholder="Correo Electrónico" required>
+                <textarea class="campo txt-area" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault(); 
+            alert("¡Tu mensaje ha sido enviado con éxito!");
+        }
+    </script>
+</body>
+</html>
