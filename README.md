@@ -1,4 +1,4 @@
-#  ¡Hola! Soy Mirko Limas <img src="https://media.tenor.com/lO6HqZ3I2dIAAAAi/e.gif" width="71"/>
+#  ¡Hola! Soy Mirko Limas <img src="https://media.tenor.com/lO6HqZ3I2dIAAAAi/e.gif" width="56"/>
 
 <div align="center">
   <img src="https://media.tenor.com/getgZf-P-I8AAAAi/luffy-one-piece.gif" width="200"/>
